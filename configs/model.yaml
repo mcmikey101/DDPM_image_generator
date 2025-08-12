@@ -1,0 +1,27 @@
+model:
+  enc_chs: 
+    - 1
+    - 32
+    - 64
+    - 128
+  dec_chs: 
+    - 128
+    - 64
+    - 32
+  num_class: 1
+  retain_dim: True
+  out_size:
+    - 28
+    - 28
+  time_emb_dim: 32
+
+training:
+  lr: 0.001
+  epochs: 1
+  batch_size: 128
+
+sampler:
+  timesteps: 500
+  start: 0.001
+  end: 0.02
+  img_size: 28
